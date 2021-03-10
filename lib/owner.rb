@@ -1,7 +1,7 @@
 class Owner
   # code goes here
   @@all = []
-  attr_accessor :cat
+  attr_accessor :cat, :dog
   attr_reader :name
   
   def initialize(name)
@@ -31,6 +31,10 @@ class Owner
   
   def cats 
     Cat.all.select{|cat| cat.owner == self}
+  end
+  
+  def dogs 
+    Dog.all.select{|dog| dog.owner == self}
   end
 end
 
