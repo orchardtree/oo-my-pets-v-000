@@ -41,6 +41,10 @@ class Owner
     cat_purchase = Cat.new(name, self)
   end
   
+  def buy_dog(name)
+    dog_purchase = Cat.new(name, self)
+  end  
+  
 end
 
 
