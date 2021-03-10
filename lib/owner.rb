@@ -9,4 +9,7 @@ class Owner
   def species
     "human"
   end
+  
+  def say_species 
+  end
 end
