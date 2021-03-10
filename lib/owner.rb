@@ -65,11 +65,13 @@ class Owner
     Cat.all.select do |cat| 
       if cat.owner == self
         cat.mood = "nervous"
+        cat.owner = nil
       end
     end
     Dog.all.select do |dog| 
       if dog.owner == self
         dog.mood = "nervous"
+        dog.owner = nil
       end
     end
   end
