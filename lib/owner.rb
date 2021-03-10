@@ -1,6 +1,7 @@
 class Owner
   # code goes here
   @@all = []
+  attr_accessor :cat
   attr_reader :name
   
   def initialize(name)
@@ -29,5 +30,11 @@ class Owner
   end
   
   def cats 
+    Cat.all
   end
 end
+
+
+
+
+
